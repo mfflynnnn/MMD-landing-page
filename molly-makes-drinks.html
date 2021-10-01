@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MollyMakesDrinks</title>
+
+    <link
+      rel="icon"
+      href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/295/original/apple-touch-icon.png?1629058848"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(auto, auto);
+      }
+      body {
+        background: #fcd8d4;
+        font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+      }
+      .one {
+        grid-column: 2;
+        grid-row: 1;
+        display: block;
+        margin: 30px auto;
+        padding: 10px;
+        width: 650px;
+        max-width: 700px;
+        height: 175px;
+        border: thick double white;
+        border-radius: 50%;
+        background: transparent;
+      }
+      .capitalize {
+        font-size: 75px;
+      }
+      h1 {
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        margin: 30px 0 0 100px;
+        color: #c6898a;
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+
+      h1::after {
+        content: "";
+        position: absolute;
+        width: 99%;
+        height: 60%;
+        top: 22px;
+        left: 10px;
+        background: #1b4965;
+        z-index: -1;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 0 auto;
+        color: #a7687d;
+      }
+
+      h3 {
+        text-align: center;
+        margin: 0px 0px 0;
+        color: #0f3c58;
+      }
+      .two {
+        grid-column: 2;
+        grid-row: 2;
+        margin: -5em 0 0 0;
+        line-height: 30px;
+        color: #0f3c58;
+        font-size: 19px;
+      }
+      .me {
+        width: 300px;
+        border-radius: 100%;
+        float: right;
+        shape-outside: circle(50%);
+        margin: 0 70px 0 25px;
+        padding: 20px;
+      }
+      .main {
+        padding: 65px 125px 0 125px;
+        max-width: 650px;
+        text-align: justify;
+      }
+      .spirits:link {
+        color: #a7687d;
+      }
+      .spirits:visited {
+        color: #a7687d;
+      }
+      .spirits:hover {
+        color: white;
+      }
+      .follow-me {
+        font-weight: 100;
+        background: white;
+        width: 460px;
+        text-align: center;
+        margin: 25px auto;
+        padding: 7px 0 5px 0;
+      }
+      .follow-link {
+        color: #a7687d;
+      }
+      .follow-link:hover {
+        color: #fcd8d4;
+      }
+      .three {
+        grid-column: 2;
+        grid-row: 4;
+        display: block;
+        text-align: center;
+        height: fit-content;
+        width: 700px;
+        background: #0f3c58;
+        box-shadow: rgba(15, 60, 88, 0.1) 0px 8px 8px 0;
+        border-radius: 15px;
+        margin: 0 75px 0 75px;
+        padding: 0 0 20px 0;
+        align-items: center;
+        justify-content: center;
+      }
+      h4 {
+        color: white;
+        font-size: xx-large;
+        letter-spacing: 3px;
+        margin: 20px 0 10px 0;
+      }
+      hr {
+        border-top: 3px double white;
+        width: 300px;
+        margin: 8px auto 20px auto;
+      }
+      .pictainer {
+        display: block;
+        margin: 0 auto;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0 4px;
+      }
+
+      .column {
+        flex: 32%;
+        max-width: 32%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin: 10px;
+        vertical-align: middle;
+        width: 65%;
+        border-radius: 15px;
+      }
+
+      .four {
+        grid-column: 2;
+        grid-row: 5;
+        height: 88px;
+        margin: 0 auto;
+      }
+      button {
+        display: block;
+        margin: 30px auto;
+        border: 1px solid #c6898a;
+        background: #c6898a;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background: white;
+        border: 1px solid white;
+        color: #c6898a;
+      }
+      .five {
+        grid-column: 2;
+        grid-row: 6;
+        text-align: center;
+      }
+      h5 {
+        color: #0f3c58;
+        font-weight: lighter;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="one">
+        <h1>
+          <span class="capitalize">M</span>olly
+          <span class="capitalize">M</span>akes
+          <span class="capitalize">D</span>rinks
+        </h1>
+        <h2>Cocktails for Everyone</h2>
+        <h3>
+          (and Every
+          <em> Body</em>
+          )
+        </h3>
+      </div>
+      <div class="two">
+        <img
+          class="me"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/284/original/MMD_selfie.jpeg?1629057195"
+          alt="An image of Molly Flynn"
+        />
+        <p class="main">
+          Molly Flynn loves drinks, especially craft cocktails. When Molly went
+          sober in 2016, she had a hard time finding any suitable replacements
+          for her favorite pastime. Fast forward to the pandemic and all of a
+          sudden one
+          <a
+            class="spirits"
+            href="https://www.seedlipdrinks.com/"
+            target="_blank"
+            >zero proof spirit</a
+          >
+          emerged... then
+          <a class="spirits" href="https://lyres.com/" target="_blank"
+            >another</a
+          >
+          ...then
+          <a class="spirits" href="https://drinkmonday.co/" target="_blank"
+            >another</a
+          >! Molly found a new passion for transforming all her favorite
+          beverages into non-alcoholic cocktails utilizing alcohol-free spirits.
+          Her favorite cocktail these days is the same as before:
+          <br />
+          an
+          <a
+            class="spirits"
+            href="https://www.instagram.com/p/CObKYYQDxD5/"
+            target="_blank"
+            >Old Fashioned</a
+          >.
+        </p>
+        <p class="follow-me">
+          <a
+            class="follow-link"
+            href="https://www.instagram.com/mollymakesdrinks/"
+            target="_blank"
+            >Follow along with Molly</a
+          >
+          as she makes alcohol-free
+          <br />
+          drinks that are <strong>delicious AF</strong>.
+        </p>
+      </div>
+      <div class="three">
+        <h4>Molly made some drinks!</h4>
+        <hr />
+        <div class="pictainer">
+          <div class="row">
+            <div class="column">
+              <a
+                href="https://www.instagram.com/p/CPElD4cjRpR/"
+                target="_blank"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/285/original/MollyMakesDrinks_Blue.JPG?1629057265"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/p/CQ9mTOWs3L6/"
+                target="_blank"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/288/original/MollyMakesDrinks_DryBar.JPG?1629057496"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/p/CNQUI5XjSkq/"
+                target="_blank"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/290/original/MollyMakesDrinks_peaches.JPG?1629057752"
+                />
+              </a>
+            </div>
+            <div class="column">
+              <a
+                href="https://www.instagram.com/p/CMfP6lJDtVE/"
+                target="_blank"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/286/original/MollyMakesDrinks_purple.JPG?1629057328"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/p/CKrqbG6jhTp/"
+                target="_blank"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/291/original/MollyMakesDrinks_holiday.JPG?1629057817"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/p/CPJRZ6gjRYq/"
+                target="_blank"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/292/original/MollyMakesDrinks_niceice_copy.JPG?1629057875"
+                />
+              </a>
+            </div>
+            <div class="column">
+              <a
+                href="https://www.instagram.com/p/CM2qAAkjyQo/"
+                target="_blank"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/287/original/MollyMakesDrinks_grapefruit.JPG?1629057448"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/p/CI6fHdOhZjr/"
+                target="_blank"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/293/original/MollyMakesDrinks_bluepink_copy.JPG?1629057954"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/p/CNLSlEHDQ5T/"
+                target="_blank"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/294/original/MollyMakesDrinks_martini.JPG?1629057980"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="four">
+        <button>Contact Molly 💗</button>
+      </div>
+      <div class="five">
+        <h5>This page was built by Molly Flynn. High five!</h5>
+      </div>
+    </div>
+    <script>
+      function contactMolly() {
+        let name = prompt("What is your first name?");
+        let email = prompt("What is your email address?");
+        let drinkingAge = prompt(
+          "Are you of legal drinking age in your country?"
+        );
+
+        drinkingAge = drinkingAge.toLowerCase();
+        drinkingAge = drinkingAge.trim();
+
+        if (drinkingAge === "yes") {
+          alert("Great! Molly will be in touch soon.");
+        } else if (drinkingAge === "no") {
+          alert(
+            "That's okay, it's all non-alcoholic! Molly will be in touch soon."
+          );
+        } else {
+          alert("Sorry, we didn't catch that. Please try again.");
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", contactMolly);
+    </script>
+  </body>
+</html>
